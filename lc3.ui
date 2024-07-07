@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>lc3</class>
+ <widget class="QMainWindow" name="lc3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1176</width>
+    <height>701</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>lc3</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 59);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="Upload_code">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>291</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>(: uplode your input code :) </string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="memoryTable">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>70</y>
+      <width>221</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Script</family>
+      <pointsize>25</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25pt &quot;Segoe Script&quot;;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>LC3</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>550</y>
+      <width>291</width>
+      <height>67</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="ASSEMBLE">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>ASSEMBLE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="Next">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Next Phase</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>862</x>
+      <y>115</y>
+      <width>271</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Script</family>
+     </font>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="4" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="R4">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>R4</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="R4_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="R1">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>R1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="R1_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="14" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_15">
+       <item>
+        <widget class="QLabel" name="Positive">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>Positive</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Positive_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLabel" name="R5">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>R5</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="R5_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="9" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <item>
+        <widget class="QLabel" name="IR">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; /* Rounded corners */</string>
+         </property>
+         <property name="text">
+          <string>IR</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="IR_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="8" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <item>
+        <widget class="QLabel" name="PC">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>PC</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="PC_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="10" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <item>
+        <widget class="QLabel" name="MDR">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>MDR</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="MDR_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="11" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <item>
+        <widget class="QLabel" name="MAR">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>MAR</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="MAR_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="R2">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>R2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="R2_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="R0">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>R0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="R0_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="R3">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>R3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="R3_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QLabel" name="R6">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; /* Rounded corners */</string>
+         </property>
+         <property name="text">
+          <string>R6</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="R6_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="12" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="Negative">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>Negative</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Negative_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="13" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_14">
+       <item>
+        <widget class="QLabel" name="Zero">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>Zero</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Zero_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="7" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <widget class="QLabel" name="R7">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string>R7</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="R7_in">
+         <property name="font">
+          <font>
+           <family>Segoe Script</family>
+           <pointsize>9</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>863</x>
+      <y>67</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="Phase">
+       <property name="font">
+        <font>
+         <family>Segoe Script</family>
+         <pointsize>9</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Segoe Script&quot;;
+background-color: rgb(0, 79, 115);
+color: rgb(255, 255, 255);
+border-radius: 5px; </string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1176</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
