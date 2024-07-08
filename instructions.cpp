@@ -24,12 +24,10 @@ int16_t signExtend(uint16_t value, int bits) {
     return value;
 }
 
-// Helper function to extract specific bits from the instruction register
 uint16_t extractBits(uint16_t ir, int start, int length) {
     return (ir >> start) & ((1 << length) - 1);
 }
 
-// Decode function
 void Decode() {
     opcode = extractBits(registers.getIR(), 12, 4);
 
